@@ -9,19 +9,25 @@ public class ValidUsernames07 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        StringBuilder sb = new StringBuilder();
         String regex = "^[\\w-]{3,16}$";
         String line = reader.readLine();
-        if (line.equals("END")){
-            System.out.println("(no output)");
-        }
+        int counter = 0;
 
         while (!"END".equals(line)){
             if(Pattern.matches(regex,line)) {
-                System.out.println("valid");
+                counter++;
+                sb.append("valid");
+                sb.append("\n");
             }else{
-                System.out.println("invalid");
+                sb.append("invalid");
+                sb.append("\n");
             }
             line = reader.readLine();
+        }
+
+        if (counter > 0){
+            System.out.println(sb);
         }
     }
 }
