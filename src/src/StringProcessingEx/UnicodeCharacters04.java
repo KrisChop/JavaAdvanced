@@ -1,4 +1,4 @@
-package StringProcessingEx;
+SDINFHUBpackage StringProcessingEx;
 
 import java.io.BufferedReader;
 import java.io.IOException;
