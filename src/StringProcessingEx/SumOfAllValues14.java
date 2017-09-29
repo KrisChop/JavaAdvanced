@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
+//90/100
 public class SumOfAllValues14 {
     public static void main(String[] args) throws IOException {
 
