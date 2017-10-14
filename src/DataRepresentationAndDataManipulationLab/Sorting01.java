@@ -30,8 +30,6 @@ public class Sorting01 {
             }
         }
         System.out.println(Arrays.toString(nums)
-                .replaceAll(",","")
-                .replace("]","")
-                .replace("[",""));
+                .replaceAll("[\\]\\[,]",""));
     }
 }
